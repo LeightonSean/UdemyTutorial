@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTackToe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbM-55-efF">
+                                <rect key="frame" x="224" y="115" width="89" height="57"/>
+                                <state key="normal" title="Click"/>
+                                <connections>
+                                    <action selector="spaceGuessed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4eh-qV-MTl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNK-Fe-cwE">
+                                <rect key="frame" x="61" y="115" width="89" height="57"/>
+                                <state key="normal" title="Click"/>
+                                <connections>
+                                    <action selector="spaceGuessed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0qD-6i-Kqa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2S4-zW-OMP">
+                                <rect key="frame" x="158" y="115" width="64" height="57"/>
+                                <state key="normal" title="Click"/>
+                                <connections>
+                                    <action selector="spaceGuessed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0q-kf-kxO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FM-mO-4tN">
+                                <rect key="frame" x="158" y="180" width="64" height="57"/>
+                                <state key="normal" title="Click"/>
+                                <connections>
+                                    <action selector="spaceGuessed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a1o-NG-zI2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmk-1Q-zTV">
+                                <rect key="frame" x="224" y="180" width="89" height="57"/>
+                                <state key="normal" title="Click"/>
+                                <connections>
+                                    <action selector="spaceGuessed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XTi-dn-RA1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ods-JK-Onr">
+                                <rect key="frame" x="61" y="245" width="89" height="57"/>
+                                <state key="normal" title="Click"/>
+                                <connections>
+                                    <action selector="spaceGuessed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cAH-Ky-34N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pk4-xW-TpQ">
+                                <rect key="frame" x="158" y="245" width="64" height="57"/>
+                                <state key="normal" title="Click"/>
+                                <connections>
+                                    <action selector="spaceGuessed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aez-Xu-f8i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trF-aX-kH6">
+                                <rect key="frame" x="224" y="245" width="89" height="57"/>
+                                <state key="normal" title="Click"/>
+                                <connections>
+                                    <action selector="spaceGuessed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fD1-SE-Kv4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pv-Gm-3am">
+                                <rect key="frame" x="86" y="386" width="203" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLS-iX-zyy">
+                                <rect key="frame" x="164" y="473" width="46" height="30"/>
+                                <state key="normal" title="Reset"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2I-Tn-b0y">
+                                <rect key="frame" x="61" y="180" width="89" height="57"/>
+                                <state key="normal" title="Click"/>
+                                <connections>
+                                    <action selector="spaceGuessed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lUm-aU-kJY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="guessBC" destination="pk4-xW-TpQ" id="5CW-ER-wCU"/>
+                        <outlet property="guessBL" destination="Ods-JK-Onr" id="qnE-ZW-BVG"/>
+                        <outlet property="guessBR" destination="trF-aX-kH6" id="pRQ-32-Kbr"/>
+                        <outlet property="guessMC" destination="0FM-mO-4tN" id="qCF-aT-QnA"/>
+                        <outlet property="guessML" destination="h2I-Tn-b0y" id="JbB-or-GR1"/>
+                        <outlet property="guessMR" destination="xmk-1Q-zTV" id="V59-N3-CVj"/>
+                        <outlet property="guessTC" destination="2S4-zW-OMP" id="l6z-IB-MAV"/>
+                        <outlet property="guessTL" destination="FNK-Fe-cwE" id="zTV-iU-J9N"/>
+                        <outlet property="guessTR" destination="VbM-55-efF" id="flH-OW-TNH"/>
+                        <outlet property="resultLabel" destination="9Pv-Gm-3am" id="kBY-fI-Nay"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.5" y="364.5"/>
+        </scene>
+    </scenes>
+</document>
