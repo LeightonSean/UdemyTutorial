@@ -33,8 +33,8 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        resultLabel.center = CGPointMake(resultLabel.center.x - 300, resultLabel.center.y);
-        btnResult.center = CGPointMake(resultLabel.center.x - 300, resultLabel.center.y)
+        //resultLabel.center = CGPointMake(resultLabel.center.x - 300, resultLabel.center.y);
+        //btnResult.center = CGPointMake(btnResult.center.x - 300, btnResult.center.y)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -44,8 +44,8 @@ class ViewController: UIViewController {
     func doAnimation(){
         UIView.animateWithDuration(1) { () -> Void in
             
-            self.resultLabel.center = CGPointMake(self.resultLabel.center.x + 400, self.resultLabel.center.y);
-            self.btnResult.center = CGPointMake(self.btnResult.center.x + 300, self.resultLabel.center.y);
+            //self.resultLabel.center = CGPointMake(self.resultLabel.center.x + 400, self.resultLabel.center.y);
+            //self.btnResult.center = CGPointMake(self.btnResult.center.x + 300, self.resultLabel.center.y);
             
         }
     }
@@ -57,6 +57,9 @@ class ViewController: UIViewController {
     }
     
     func checkThree( btn1:UIButton, btn2:UIButton, btn3:UIButton)->Bool{
+        if(btn1.tag == 0 || btn2.tag == 0 || btn3.tag == 0){
+            return false;  
+        }
         if(btn1.tag == btn2.tag && btn1.tag == btn3.tag){
             winner = btn1.tag;
             return true;
@@ -70,13 +73,13 @@ class ViewController: UIViewController {
     func checkGameOver(){
         var gameOver:Bool = false;
         gameOver = checkThree(guessTR, btn2: guessTC, btn3: guessTL);
-        gameOver = gameOver && checkThree(guessMR, btn2: guessMC, btn3: guessML);
-        gameOver = gameOver && checkThree(guessBL, btn2: guessBC, btn3: guessBR);
-        gameOver = gameOver && checkThree(guessTR, btn2: guessMR, btn3: guessBR);
-        gameOver = gameOver && checkThree(guessTC, btn2: guessMC, btn3: guessBC);
-        gameOver = gameOver && checkThree(guessTL, btn2: guessML, btn3: guessBL);
-        gameOver = gameOver && checkThree(guessTR, btn2: guessMC, btn3: guessBL);
-        gameOver = gameOver && checkThree(guessTL, btn2: guessMC, btn3: guessBR);
+        gameOver = gameOver || checkThree(guessMR, btn2: guessMC, btn3: guessML);
+        gameOver = gameOver || checkThree(guessBL, btn2: guessBC, btn3: guessBR);
+        gameOver = gameOver || checkThree(guessTR, btn2: guessMR, btn3: guessBR);
+        gameOver = gameOver || checkThree(guessTC, btn2: guessMC, btn3: guessBC);
+        gameOver = gameOver || checkThree(guessTL, btn2: guessML, btn3: guessBL);
+        gameOver = gameOver || checkThree(guessTR, btn2: guessMC, btn3: guessBL);
+        gameOver = gameOver || checkThree(guessTL, btn2: guessMC, btn3: guessBR);
         
         
         if(gameOver){
@@ -86,7 +89,7 @@ class ViewController: UIViewController {
             }else{
                 resultLabel.text = "O Wins";
             }
-            
+            NSLog(resultLabel.text!);
             timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("doAnimation"), userInfo: nil, repeats: true);
         }else {
             timer.invalidate();
@@ -107,11 +110,13 @@ class ViewController: UIViewController {
             if(playerTurn == 0){
                 // X Turn
                 btnPressed.tag = 1;
+                btnPressed.setTitle("X", forState: .Normal);
                 playerTurn = 1;
             }
             else{
                 // O Turn
                 btnPressed.tag = 2;
+                btnPressed.setTitle("O", forState: .Normal);
                 playerTurn = 0;
             }
         }else{
@@ -119,7 +124,7 @@ class ViewController: UIViewController {
             
         }
         
-        
+        checkGameOver();
         
         
         

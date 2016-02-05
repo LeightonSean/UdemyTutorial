@@ -81,6 +81,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLS-iX-zyy">
                                 <rect key="frame" x="164" y="473" width="46" height="30"/>
                                 <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetGamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B79-Rp-J7E"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2I-Tn-b0y">
                                 <rect key="frame" x="61" y="180" width="89" height="57"/>
@@ -94,6 +97,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="btnResult" destination="gLS-iX-zyy" id="Bou-fk-s48"/>
                         <outlet property="guessBC" destination="pk4-xW-TpQ" id="5CW-ER-wCU"/>
                         <outlet property="guessBL" destination="Ods-JK-Onr" id="qnE-ZW-BVG"/>
                         <outlet property="guessBR" destination="trF-aX-kH6" id="pRQ-32-Kbr"/>
