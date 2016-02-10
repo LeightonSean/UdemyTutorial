@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     var playerTurn:Int = 0;
     var timer:NSTimer = NSTimer();
     var winner:Int = 0; // no winner
+    var finalX:CGFloat = 0.0;
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -33,20 +34,22 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        //resultLabel.center = CGPointMake(resultLabel.center.x - 300, resultLabel.center.y);
-        //btnResult.center = CGPointMake(btnResult.center.x - 300, btnResult.center.y)
+        finalX = resultLabel.center.x;
+        resultLabel.center = CGPointMake(resultLabel.center.x - 400, resultLabel.center.y);
+        btnResult.center = CGPointMake(btnResult.center.x - 400, btnResult.center.y)
     }
     
+    
     override func viewDidAppear(animated: Bool) {
-        
-    }
 
+    }
+    
+
+    
     func doAnimation(){
-        UIView.animateWithDuration(1) { () -> Void in
-            
-            //self.resultLabel.center = CGPointMake(self.resultLabel.center.x + 400, self.resultLabel.center.y);
-            //self.btnResult.center = CGPointMake(self.btnResult.center.x + 300, self.resultLabel.center.y);
-            
+        if(self.resultLabel.center.x != finalX){
+            self.resultLabel.center = CGPointMake(self.resultLabel.center.x + 10, self.resultLabel.center.y);
+            self.btnResult.center = CGPointMake(self.btnResult.center.x + 10, self.btnResult.center.y);
         }
     }
     
@@ -58,7 +61,7 @@ class ViewController: UIViewController {
     
     func checkThree( btn1:UIButton, btn2:UIButton, btn3:UIButton)->Bool{
         if(btn1.tag == 0 || btn2.tag == 0 || btn3.tag == 0){
-            return false;  
+            return false;
         }
         if(btn1.tag == btn2.tag && btn1.tag == btn3.tag){
             winner = btn1.tag;
@@ -92,10 +95,25 @@ class ViewController: UIViewController {
             NSLog(resultLabel.text!);
             timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("doAnimation"), userInfo: nil, repeats: true);
         }else {
-            timer.invalidate();
+            
+            if(checkTie()){
+                resultLabel.text = "It was a tie";
+                NSLog(resultLabel.text!);
+                timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("doAnimation"), userInfo: nil, repeats: true);
+                
+            }
+            else{
+                timer.invalidate();
+            }
+
         }
         
     
+    }
+    
+    func checkTie()->Bool{
+        return guessTL.tag != 0 && guessTC.tag != 0 && guessTR.tag != 0 && guessML.tag != 0 && guessMC.tag != 0 && guessMR.tag != 0 && guessBL.tag != 0 && guessBC.tag != 0 && guessBR != 0;
+        
     }
 
 
@@ -130,8 +148,26 @@ class ViewController: UIViewController {
         
     }
     @IBAction func resetGamePressed(sender: AnyObject) {
-        
-        
+        timer.invalidate();
+        resultLabel.text = "";
+        guessTL.tag = 0;
+        guessTL.setTitle("Click", forState: .Normal);
+        guessTC.tag = 0;
+        guessTC.setTitle("Click", forState: .Normal);
+        guessTR.tag = 0;
+        guessTR.setTitle("Click", forState: .Normal);
+        guessML.tag = 0;
+        guessML.setTitle("Click", forState: .Normal);
+        guessMC.tag = 0;
+        guessMC.setTitle("Click", forState: .Normal);
+        guessMR.tag = 0;
+        guessMR.setTitle("Click", forState: .Normal);
+        guessBL.tag = 0;
+        guessBL.setTitle("Click", forState: .Normal);
+        guessBC.tag = 0;
+        guessBC.setTitle("Click", forState: .Normal);
+        guessBR.tag = 0;
+        guessBR.setTitle("Click", forState: .Normal);
     }
     
 }

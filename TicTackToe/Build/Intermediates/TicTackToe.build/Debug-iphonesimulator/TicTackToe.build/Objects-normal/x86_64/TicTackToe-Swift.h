@@ -87,6 +87,7 @@ typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -129,6 +130,7 @@ SWIFT_CLASS("_TtC10TicTackToe14ViewController")
 @property (nonatomic) NSInteger playerTurn;
 @property (nonatomic) NSTimer * __nonnull timer;
 @property (nonatomic) NSInteger winner;
+@property (nonatomic) CGFloat finalX;
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
 - (void)viewDidAppear:(BOOL)animated;
@@ -136,6 +138,7 @@ SWIFT_CLASS("_TtC10TicTackToe14ViewController")
 - (void)didReceiveMemoryWarning;
 - (BOOL)checkThree:(UIButton * __nonnull)btn1 btn2:(UIButton * __nonnull)btn2 btn3:(UIButton * __nonnull)btn3;
 - (void)checkGameOver;
+- (BOOL)checkTie;
 - (IBAction)spaceGuessed:(id __nonnull)sender;
 - (IBAction)resetGamePressed:(id __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
