@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,6 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="board.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zLY-t8-TJG">
+                                <rect key="frame" x="70" y="123" width="240" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Iq9-6G-l80"/>
+                                    <constraint firstAttribute="height" constant="168" id="hZt-HB-HYe"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbM-55-efF">
                                 <rect key="frame" x="224" y="115" width="89" height="57"/>
                                 <state key="normal" title="Click"/>
@@ -35,6 +43,13 @@
                                 <state key="normal" title="Click"/>
                                 <connections>
                                     <action selector="spaceGuessed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0q-kf-kxO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2I-Tn-b0y">
+                                <rect key="frame" x="61" y="180" width="89" height="57"/>
+                                <state key="normal" title="Click"/>
+                                <connections>
+                                    <action selector="spaceGuessed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lUm-aU-kJY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FM-mO-4tN">
@@ -86,15 +101,14 @@
                                     <action selector="resetGamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B79-Rp-J7E"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2I-Tn-b0y">
-                                <rect key="frame" x="61" y="180" width="89" height="57"/>
-                                <state key="normal" title="Click"/>
-                                <connections>
-                                    <action selector="spaceGuessed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lUm-aU-kJY"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zLY-t8-TJG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="103" id="HV6-tB-eZD"/>
+                            <constraint firstItem="zLY-t8-TJG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="QV4-oa-dAe"/>
+                            <constraint firstItem="zLY-t8-TJG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Twx-xM-pfC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zLY-t8-TJG" secondAttribute="trailing" constant="45" id="hx4-ze-g2O"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -116,4 +130,7 @@
             <point key="canvasLocation" x="85.5" y="364.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="board.jpg" width="326" height="332"/>
+    </resources>
 </document>
