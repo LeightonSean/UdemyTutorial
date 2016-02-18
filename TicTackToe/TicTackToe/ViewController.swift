@@ -128,12 +128,14 @@ class ViewController: UIViewController {
             if(playerTurn == 0){
                 // X Turn
                 btnPressed.tag = 1;
+                //btnPressed.setBackgroundImage(UIImage(named: "X.jpg"), forState: .Normal);
                 btnPressed.setTitle("X", forState: .Normal);
                 playerTurn = 1;
             }
             else{
                 // O Turn
                 btnPressed.tag = 2;
+                //btnPressed.setBackgroundImage(UIImage(named: "Circle.jpg"), forState: .Normal);
                 btnPressed.setTitle("O", forState: .Normal);
                 playerTurn = 0;
             }

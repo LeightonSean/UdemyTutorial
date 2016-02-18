@@ -6,58 +6,60 @@ provides-nominal:
 provides-member:
 - ["C10TicTackToe14ViewController", ""]
 provides-dynamic-lookup:
-- "guessBC"
-- "checkGameOver"
-- "spaceGuessed"
-- "viewDidLoad"
-- "guessMC"
-- "btnResult"
-- "checkThree"
-- "guessTC"
-- "resetGamePressed"
-- "winner"
-- "guessBL"
-- "checkTie"
 - "playerTurn"
 - "guessMR"
-- "viewDidAppear"
+- "spaceGuessed"
 - "guessBR"
-- "didReceiveMemoryWarning"
-- "doAnimation"
 - "finalX"
 - "viewDidLayoutSubviews"
 - "resultLabel"
+- "didReceiveMemoryWarning"
 - "guessML"
 - "guessTR"
 - "timer"
 - "guessTL"
+- "checkTie"
+- "guessBC"
+- "resetGamePressed"
+- "viewDidLoad"
+- "guessMC"
+- "btnResult"
+- "guessTC"
+- "winner"
+- "viewDidAppear"
+- "checkGameOver"
+- "guessBL"
+- "doAnimation"
+- "checkThree"
 depends-top-level:
-- !private "!="
-- "NSTimer"
-- !private "CGPointMake"
-- "AnyObject"
-- !private "UnicodeScalarType"
-- !private "BooleanLiteralType"
+- "UIButton"
 - "Bool"
 - !private "+"
-- "ViewController"
-- !private "NSLog"
-- "UIButton"
-- !private "StringLiteralType"
-- "Int"
-- "UILabel"
-- "UIViewController"
-- "CGFloat"
-- !private "-"
 - !private "||"
 - !private "&&"
+- "Int"
+- !private "NSLog"
+- "UILabel"
+- !private "BooleanLiteralType"
+- "AnyObject"
+- !private "!="
+- "UIViewController"
+- !private "CGPointMake"
+- "CGFloat"
+- !private "UnicodeScalarType"
+- !private "UIImage"
+- "NSTimer"
+- !private "-"
 - !private "Selector"
+- !private "StringLiteralType"
+- "ViewController"
 - !private "=="
 depends-member:
 - !private ["PSs9AnyObject", "CGPointMake"]
 - !private ["PSs9AnyObject", "NSLog"]
 - ["PSs9AnyObject", "NSTimer"]
 - !private ["PSs9AnyObject", "Selector"]
+- !private ["PSs9AnyObject", "UIImage"]
 - ["PSs9AnyObject", "btnResult"]
 - !private ["PSs9AnyObject", "center"]
 - ["PSs9AnyObject", "checkGameOver"]
@@ -81,6 +83,7 @@ depends-member:
 - ["PSs9AnyObject", "resetGamePressed"]
 - ["PSs9AnyObject", "resultLabel"]
 - !private ["PSs9AnyObject", "scheduledTimerWithTimeInterval"]
+- !private ["PSs9AnyObject", "setBackgroundImage"]
 - !private ["PSs9AnyObject", "setTitle"]
 - ["PSs9AnyObject", "spaceGuessed"]
 - !private ["PSs9AnyObject", "tag"]
@@ -102,6 +105,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSLog"]
 - ["PSs11CVarArgType", "NSTimer"]
 - !private ["PSs11CVarArgType", "Selector"]
+- !private ["PSs11CVarArgType", "UIImage"]
 - ["PSs11CVarArgType", "btnResult"]
 - !private ["PSs11CVarArgType", "center"]
 - ["PSs11CVarArgType", "checkGameOver"]
@@ -125,6 +129,7 @@ depends-member:
 - ["PSs11CVarArgType", "resetGamePressed"]
 - ["PSs11CVarArgType", "resultLabel"]
 - !private ["PSs11CVarArgType", "scheduledTimerWithTimeInterval"]
+- !private ["PSs11CVarArgType", "setBackgroundImage"]
 - !private ["PSs11CVarArgType", "setTitle"]
 - ["PSs11CVarArgType", "spaceGuessed"]
 - !private ["PSs11CVarArgType", "tag"]
@@ -139,6 +144,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSLog"]
 - ["PSs23CustomStringConvertible", "NSTimer"]
 - !private ["PSs23CustomStringConvertible", "Selector"]
+- !private ["PSs23CustomStringConvertible", "UIImage"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["PSs23CustomStringConvertible", "btnResult"]
 - !private ["PSs23CustomStringConvertible", "center"]
@@ -163,6 +169,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "resetGamePressed"]
 - ["PSs23CustomStringConvertible", "resultLabel"]
 - !private ["PSs23CustomStringConvertible", "scheduledTimerWithTimeInterval"]
+- !private ["PSs23CustomStringConvertible", "setBackgroundImage"]
 - !private ["PSs23CustomStringConvertible", "setTitle"]
 - ["PSs23CustomStringConvertible", "spaceGuessed"]
 - !private ["PSs23CustomStringConvertible", "tag"]
@@ -178,6 +185,7 @@ depends-member:
 - ["PSs9Equatable", "NSTimer"]
 - !private ["PSs9Equatable", "Normal"]
 - !private ["PSs9Equatable", "Selector"]
+- !private ["PSs9Equatable", "UIImage"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - ["PSs9Equatable", "btnResult"]
 - !private ["PSs9Equatable", "center"]
@@ -202,6 +210,7 @@ depends-member:
 - ["PSs9Equatable", "resetGamePressed"]
 - ["PSs9Equatable", "resultLabel"]
 - !private ["PSs9Equatable", "scheduledTimerWithTimeInterval"]
+- !private ["PSs9Equatable", "setBackgroundImage"]
 - !private ["PSs9Equatable", "setTitle"]
 - ["PSs9Equatable", "spaceGuessed"]
 - !private ["PSs9Equatable", "tag"]
@@ -219,6 +228,7 @@ depends-member:
 - !private ["PSs8Hashable", "NSLog"]
 - ["PSs8Hashable", "NSTimer"]
 - !private ["PSs8Hashable", "Selector"]
+- !private ["PSs8Hashable", "UIImage"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - ["PSs8Hashable", "btnResult"]
 - !private ["PSs8Hashable", "center"]
@@ -243,6 +253,7 @@ depends-member:
 - ["PSs8Hashable", "resetGamePressed"]
 - ["PSs8Hashable", "resultLabel"]
 - !private ["PSs8Hashable", "scheduledTimerWithTimeInterval"]
+- !private ["PSs8Hashable", "setBackgroundImage"]
 - !private ["PSs8Hashable", "setTitle"]
 - ["PSs8Hashable", "spaceGuessed"]
 - !private ["PSs8Hashable", "tag"]
@@ -258,6 +269,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSLog"]
 - ["PSo8NSCoding", "NSTimer"]
 - !private ["PSo8NSCoding", "Selector"]
+- !private ["PSo8NSCoding", "UIImage"]
 - ["PSo8NSCoding", "btnResult"]
 - !private ["PSo8NSCoding", "center"]
 - ["PSo8NSCoding", "checkGameOver"]
@@ -279,6 +291,7 @@ depends-member:
 - ["PSo8NSCoding", "playerTurn"]
 - ["PSo8NSCoding", "resetGamePressed"]
 - ["PSo8NSCoding", "resultLabel"]
+- !private ["PSo8NSCoding", "setBackgroundImage"]
 - !private ["PSo8NSCoding", "setTitle"]
 - ["PSo8NSCoding", "spaceGuessed"]
 - !private ["PSo8NSCoding", "tag"]
@@ -293,6 +306,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSLog"]
 - ["PSo26NSExtensionRequestHandling", "NSTimer"]
 - !private ["PSo26NSExtensionRequestHandling", "Selector"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - ["PSo26NSExtensionRequestHandling", "btnResult"]
 - ["PSo26NSExtensionRequestHandling", "checkGameOver"]
 - ["PSo26NSExtensionRequestHandling", "checkThree"]
@@ -330,6 +344,7 @@ depends-member:
 - ["CSo8NSObject", "NSTimer"]
 - !private ["CSo8NSObject", "Selector"]
 - ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "btnResult"]
 - !private ["CSo8NSObject", "center"]
@@ -355,6 +370,7 @@ depends-member:
 - ["CSo8NSObject", "resetGamePressed"]
 - ["CSo8NSObject", "resultLabel"]
 - !private ["CSo8NSObject", "scheduledTimerWithTimeInterval"]
+- !private ["CSo8NSObject", "setBackgroundImage"]
 - !private ["CSo8NSObject", "setTitle"]
 - ["CSo8NSObject", "spaceGuessed"]
 - !private ["CSo8NSObject", "tag"]
@@ -368,6 +384,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSLog"]
 - ["PSo16NSObjectProtocol", "NSTimer"]
 - !private ["PSo16NSObjectProtocol", "Selector"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
 - ["PSo16NSObjectProtocol", "btnResult"]
 - !private ["PSo16NSObjectProtocol", "center"]
 - ["PSo16NSObjectProtocol", "checkGameOver"]
@@ -391,6 +408,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "resetGamePressed"]
 - ["PSo16NSObjectProtocol", "resultLabel"]
 - !private ["PSo16NSObjectProtocol", "scheduledTimerWithTimeInterval"]
+- !private ["PSo16NSObjectProtocol", "setBackgroundImage"]
 - !private ["PSo16NSObjectProtocol", "setTitle"]
 - ["PSo16NSObjectProtocol", "spaceGuessed"]
 - !private ["PSo16NSObjectProtocol", "tag"]
@@ -401,6 +419,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "winner"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
 - ["CSo7NSTimer", "init"]
 - !private ["CSo7NSTimer", "invalidate"]
 - !private ["CSo7NSTimer", "scheduledTimerWithTimeInterval"]
@@ -412,10 +431,13 @@ depends-member:
 - !private ["PSs14SetAlgebraType", "Normal"]
 - !private ["PSs24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "center"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "setBackgroundImage"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitle"]
 - !private ["PSo29UIAccessibilityIdentification", "tag"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "center"]
+- !private ["PSo12UIAppearance", "setBackgroundImage"]
 - !private ["PSo12UIAppearance", "setTitle"]
 - !private ["PSo12UIAppearance", "tag"]
 - !private ["PSo12UIAppearance", "text"]
@@ -423,6 +445,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSLog"]
 - ["PSo21UIAppearanceContainer", "NSTimer"]
 - !private ["PSo21UIAppearanceContainer", "Selector"]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
 - ["PSo21UIAppearanceContainer", "btnResult"]
 - !private ["PSo21UIAppearanceContainer", "center"]
 - ["PSo21UIAppearanceContainer", "checkGameOver"]
@@ -444,6 +467,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "playerTurn"]
 - ["PSo21UIAppearanceContainer", "resetGamePressed"]
 - ["PSo21UIAppearanceContainer", "resultLabel"]
+- !private ["PSo21UIAppearanceContainer", "setBackgroundImage"]
 - !private ["PSo21UIAppearanceContainer", "setTitle"]
 - ["PSo21UIAppearanceContainer", "spaceGuessed"]
 - !private ["PSo21UIAppearanceContainer", "tag"]
@@ -456,12 +480,14 @@ depends-member:
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo8UIButton", "center"]
 - !private ["CSo8UIButton", "deinit"]
+- !private ["CSo8UIButton", "setBackgroundImage"]
 - !private ["CSo8UIButton", "setTitle"]
 - !private ["CSo8UIButton", "tag"]
 - !private ["PSo18UIContentContainer", "CGPointMake"]
 - !private ["PSo18UIContentContainer", "NSLog"]
 - ["PSo18UIContentContainer", "NSTimer"]
 - !private ["PSo18UIContentContainer", "Selector"]
+- !private ["PSo18UIContentContainer", "UIImage"]
 - ["PSo18UIContentContainer", "btnResult"]
 - ["PSo18UIContentContainer", "checkGameOver"]
 - ["PSo18UIContentContainer", "checkThree"]
@@ -491,17 +517,21 @@ depends-member:
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "center"]
 - !private ["CSo9UIControl", "deinit"]
+- !private ["CSo9UIControl", "setBackgroundImage"]
 - !private ["CSo9UIControl", "setTitle"]
 - !private ["CSo9UIControl", "tag"]
 - !private ["VSC14UIControlState", "Normal"]
 - !private ["PSo17UICoordinateSpace", "center"]
+- !private ["PSo17UICoordinateSpace", "setBackgroundImage"]
 - !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo17UICoordinateSpace", "tag"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "center"]
+- !private ["PSo13UIDynamicItem", "setBackgroundImage"]
 - !private ["PSo13UIDynamicItem", "setTitle"]
 - !private ["PSo13UIDynamicItem", "tag"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["CSo7UIImage", "init"]
 - !private ["CSo7UILabel", "center"]
 - !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "AnyObject"]
@@ -513,6 +543,7 @@ depends-member:
 - ["CSo11UIResponder", "NSTimer"]
 - !private ["CSo11UIResponder", "Selector"]
 - ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "btnResult"]
 - !private ["CSo11UIResponder", "center"]
@@ -536,6 +567,7 @@ depends-member:
 - ["CSo11UIResponder", "playerTurn"]
 - ["CSo11UIResponder", "resetGamePressed"]
 - ["CSo11UIResponder", "resultLabel"]
+- !private ["CSo11UIResponder", "setBackgroundImage"]
 - !private ["CSo11UIResponder", "setTitle"]
 - ["CSo11UIResponder", "spaceGuessed"]
 - !private ["CSo11UIResponder", "tag"]
@@ -549,6 +581,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSLog"]
 - ["PSo16UIStateRestoring", "NSTimer"]
 - !private ["PSo16UIStateRestoring", "Selector"]
+- !private ["PSo16UIStateRestoring", "UIImage"]
 - ["PSo16UIStateRestoring", "btnResult"]
 - ["PSo16UIStateRestoring", "checkGameOver"]
 - ["PSo16UIStateRestoring", "checkThree"]
@@ -580,6 +613,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSLog"]
 - ["PSo18UITraitEnvironment", "NSTimer"]
 - !private ["PSo18UITraitEnvironment", "Selector"]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
 - ["PSo18UITraitEnvironment", "btnResult"]
 - !private ["PSo18UITraitEnvironment", "center"]
 - ["PSo18UITraitEnvironment", "checkGameOver"]
@@ -601,6 +635,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "playerTurn"]
 - ["PSo18UITraitEnvironment", "resetGamePressed"]
 - ["PSo18UITraitEnvironment", "resultLabel"]
+- !private ["PSo18UITraitEnvironment", "setBackgroundImage"]
 - !private ["PSo18UITraitEnvironment", "setTitle"]
 - ["PSo18UITraitEnvironment", "spaceGuessed"]
 - !private ["PSo18UITraitEnvironment", "tag"]
@@ -613,6 +648,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "center"]
 - !private ["CSo6UIView", "deinit"]
+- !private ["CSo6UIView", "setBackgroundImage"]
 - !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "tag"]
 - !private ["CSo6UIView", "text"]
@@ -625,6 +661,7 @@ depends-member:
 - ["CSo16UIViewController", "NSTimer"]
 - !private ["CSo16UIViewController", "Selector"]
 - ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "btnResult"]
 - ["CSo16UIViewController", "checkGameOver"]
@@ -663,6 +700,7 @@ depends-member:
 - ["C10TicTackToe14ViewController", "NSTimer"]
 - !private ["C10TicTackToe14ViewController", "Selector"]
 - ["C10TicTackToe14ViewController", "UIButton"]
+- !private ["C10TicTackToe14ViewController", "UIImage"]
 - ["C10TicTackToe14ViewController", "UILabel"]
 - ["C10TicTackToe14ViewController", "btnResult"]
 - ["C10TicTackToe14ViewController", "checkGameOver"]
@@ -697,6 +735,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "center"]
 - !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "setBackgroundImage"]
 - !private ["PSs12_Reflectable", "setTitle"]
 - !private ["PSs12_Reflectable", "tag"]
 - !private ["PSs12_Reflectable", "text"]
@@ -721,6 +760,7 @@ depends-nominal:
 - !private "CSo8NSNumber"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
 - "CSo7NSTimer"
 - !private "PSs21NilLiteralConvertible"
 - !private "PSs13OptionSetType"
@@ -738,6 +778,7 @@ depends-nominal:
 - !private "VSC14UIControlState"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
+- !private "CSo7UIImage"
 - !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo16UIStateRestoring"

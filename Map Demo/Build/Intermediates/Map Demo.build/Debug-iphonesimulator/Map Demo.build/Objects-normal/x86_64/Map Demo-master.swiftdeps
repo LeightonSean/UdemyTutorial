@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
+options: "23ab06a94cea420f7383531f860d0761"
+build_time: [509075287, 918814000]
+inputs: 
+	"/Users/seanleighton/Documents/SelfProjects/IOS_Tutorial/UdemyTutorial/Map Demo/Map Demo/ViewController.swift": [509075277, 0]
+	"/Users/seanleighton/Documents/SelfProjects/IOS_Tutorial/UdemyTutorial/Map Demo/Map Demo/AppDelegate.swift": [508801488, 0]
